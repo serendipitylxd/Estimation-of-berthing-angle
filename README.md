@@ -1,2 +1,2 @@
-# Estimation-of-berthing-angle-based-on-point-cloud-data
+# Estimation-of-berthing-angle
 Computer operating system version is Ubuntu 18.04, ROS version is Melodic
