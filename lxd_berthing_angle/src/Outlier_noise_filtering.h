@@ -14,19 +14,19 @@
 #include <pcl/search/kdtree.h>
 
 //pointer
-pcl::PointCloud<pcl::PointXYZ>::Ptr PCD_Lidar_ptr(new pcl::PointCloud<pcl::PointXYZ>);//Lidar1+Lidar2点云数据的指针
-pcl::PointCloud<pcl::PointXYZ>::Ptr PCD_Lidar1_ptr(new pcl::PointCloud<pcl::PointXYZ>);//Lidar1点云数据的指针
-pcl::PointCloud<pcl::PointXYZ>::Ptr PCD_Lidar2_ptr(new pcl::PointCloud<pcl::PointXYZ>);//Lidar2点云数据的指针
+pcl::PointCloud<pcl::PointXYZ>::Ptr PCD_Lidar_ptr(new pcl::PointCloud<pcl::PointXYZ>);
+pcl::PointCloud<pcl::PointXYZ>::Ptr PCD_Lidar1_ptr(new pcl::PointCloud<pcl::PointXYZ>);
+pcl::PointCloud<pcl::PointXYZ>::Ptr PCD_Lidar2_ptr(new pcl::PointCloud<pcl::PointXYZ>);
 
-pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_port_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);//港口滤波后的指针
-pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_stray_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);//离群滤波后的指针
+pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_port_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);
+pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_stray_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);
 
-pcl::PointCloud<pcl::PointXYZ>::Ptr Lidar1_cloud_port_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);//港口滤波后的指针
-pcl::PointCloud<pcl::PointXYZ>::Ptr Lidar2_cloud_port_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);//港口滤波后的指针
+pcl::PointCloud<pcl::PointXYZ>::Ptr Lidar1_cloud_port_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);
+pcl::PointCloud<pcl::PointXYZ>::Ptr Lidar2_cloud_port_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);
 
-pcl::PointCloud<pcl::PointXYZ>::Ptr Lidar1_cloud_stray_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);//离群滤波后的指针
-pcl::PointCloud<pcl::PointXYZ>::Ptr Lidar2_cloud_stray_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);//离群滤波后的指针
-pcl::PointCloud<pcl::PointXYZ>::Ptr Lidar_cloud_stray_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);//离群滤波后的指针
+pcl::PointCloud<pcl::PointXYZ>::Ptr Lidar1_cloud_stray_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);
+pcl::PointCloud<pcl::PointXYZ>::Ptr Lidar2_cloud_stray_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);
+pcl::PointCloud<pcl::PointXYZ>::Ptr Lidar_cloud_stray_filtered_ptr(new pcl::PointCloud<pcl::PointXYZ>);
 
 class Outliner_noise_filtering{
 public:
